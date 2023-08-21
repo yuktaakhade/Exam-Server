@@ -1,0 +1,15 @@
+ON Browser-------
+1) For Login page - http://localhost:4200/login
+2) For SignUp page - http://localhost:4200/signup
+3) For Generating Token Testing purpose - http://localhost:8081/generate-token
+					Post username and password as JSON
+
+4) For getting current login user details using api - http://localhost:8081/current-user
+					Add Authorization header with token
+
+
+
+*******************UP TO THIS PASSWORD IS NOT ENCRYPTED**********************************
+
+For Swagger Ui API Documentation-: 
+	http://localhost:8081/swagger-ui/index.html
