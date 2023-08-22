@@ -17,6 +17,17 @@ import java.util.Set;
 @SpringBootApplication
 public class ExamserverApplication implements CommandLineRunner {
 
+
+	public int sumTwo(int a, int b){
+		int sum = a+b;
+		return sum;
+	}
+
+	public double multilplyTwo(double a, double b){
+		double mul = a+b;
+		return mul;
+	}
+
 	@Autowired
 	private UserService userService;
 

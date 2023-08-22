@@ -80,25 +80,44 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-		<plugin>
-		  <groupId>org.jacoco</groupId>
-		  <artifactId>jacoco-maven-plugin</artifactId>
-		  <version>0.8.7</version>
-		  <executions>
-			<execution>
-			  <id>prepare-agent</id>
-			  <goals>
-				<goal>prepare-agent</goal>
-			  </goals>
-			</execution>
-			<execution>
-			  <id>report</id>
-			  <goals>
-				<goal>report</goal>
-			  </goals>
-			</execution>
-		  </executions>
-		</plugin>
+			<plugin>
+			  <groupId>org.jacoco</groupId>
+			  <artifactId>jacoco-maven-plugin</artifactId>
+			  <version>0.8.7</version>
+			  <executions>
+				<execution>
+				  <id>prepare-agent</id>
+				  <goals>
+					<goal>prepare-agent</goal>
+				  </goals>
+				</execution>
+				<execution>
+				  <id>report</id>
+				  <goals>
+					<goal>report</goal>
+				  </goals>
+				</execution>
+			  </executions>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>cobertura-maven-plugin</artifactId>
+				<configuration>
+					<formats>
+						<format>xml</format>
+						<format>html</format>
+					</formats>
+					<check />
+				</configuration>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>cobertura</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 
