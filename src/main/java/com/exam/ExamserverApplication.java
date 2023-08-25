@@ -18,12 +18,6 @@ import java.util.Set;
 public class ExamserverApplication implements CommandLineRunner {
 
 
-
-	public double multilplyTwo(double a, double b){
-		double mul = a+b;
-		return mul;
-	}
-
 	@Autowired
 	private UserService userService;
 
