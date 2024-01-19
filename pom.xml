@@ -8,6 +8,11 @@
 		<version>2.7.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
+
+
+
+
 	
 	<groupId>com.exam</groupId>
 	<artifactId>examserver</artifactId>
